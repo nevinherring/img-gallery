@@ -46,3 +46,39 @@ nav ul li a:hover{
 }
 
 /* end navigation */
+
+section:after {
+    content: " ";
+    display: block;
+    clear:both;
+}
+
+section div.container img {
+    width: 33.3333%;
+    float: left;
+    box-sizing: border-box;
+    border: 1px solid transparent;
+    transition: opacity .5s;
+}
+
+section div.container img:hover{
+    opacity: .7;
+}
+
+section {
+    margin-bottom: 3%;
+}
+
+section h2 {
+    text-align: center;
+}
+
+footer {
+    overflow: hidden;
+    text-align: center;
+    padding-bottom: .75rem;
+}
+
+footer p {
+    font-weight: bold;
+}
