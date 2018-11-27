@@ -82,3 +82,77 @@ footer {
 footer p {
     font-weight: bold;
 }
+
+/* media queries */
+
+@media only screen and (max-width: 768px){
+    .wrapper {
+        width: 100%
+    }
+
+    header h1 {
+        margin-left: 3%;
+    }
+
+    #menu-icon{
+        width: 30px;
+        height: 26px;
+        background: url(images/menu.png) no-repeat center;
+        position: absolute;
+        top: 2%;
+        right: 5%;
+        z-index: 100;
+    }
+
+    nav ul{
+        display: none;
+        position: absolute;
+        right: 5%;
+        top: 3%;
+        padding: 3% 7%;
+        background: #eee;
+        width: 200px;
+        text-align: center;
+        z-index: 10;
+    }
+
+    nav ul li {
+        width: 90%;
+        padding: 5%;
+        margin: auto;
+    }
+
+    nav ul li a {
+        padding: 5% 20%;
+    }
+
+    nav ul li a:hover{
+        border-bottom: 1px solid #aaa;
+    }
+
+    nav:hover ul{
+        display: block;
+    }
+
+    section div.container img{
+        display: block;
+        float: none;
+        width: 100%;
+        height: auto;
+    }
+
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px){
+    .wrapper {
+        width: 100%;
+    }
+
+    header h1 {
+        margin-left: 3%;
+    }
+
+    nav {
+        margin-right: 3%;
+    }
+}
